@@ -14,7 +14,7 @@ int BinarySearch(PtrToList Tb1, int E)
 	left = 1;
 	right = Tb1->Last;
 	mid = (left+right)/2;
-	//下面这里不必使用递归，因为终止条件很简单，left == right
+	//下面这里不必使用递归，因为终止条件很简单，left > right
 	while (left <= right) {
 		if (Tb1->Data[mid-1] == E)
 			break;
