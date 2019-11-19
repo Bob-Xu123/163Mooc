@@ -46,7 +46,7 @@ int FindKthLargest(int List[], int len, int K){
 		int len2=len-len1-1, List1[len1], List2[len2];
 		int j = 0, k = 0;
 		for ( i=0; i<len; i++ ){
-			if (List[i] > e) { List1[j] = List[i]; j++; }
+			if (List[i] > e){List1[j] = List[i]; j++; }
 			if (List[i] < e) { List2[k] = List[i]; k++; }
 		}
 
