@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// 建立二叉树涉及队列，首先将队列的相关函数copy过来
+
 struct QNode {
 	int value;
 	struct QNode* next;
@@ -58,13 +60,4 @@ int DeleteQ(Queue Q) {
 	}
 }
 
-
-// 主函数
-int main() {
-	Queue Q1 = CreatQueue();
-	for (int i=11; i<=15; i++)
-		AddQ(Q1, i);
-	for (int j=11; j<=15; j++)
-		printf("%d ", DeleteQ(Q1));
-	return 0;
-}
+//下面开始根据层序输入序列，构建二叉树
